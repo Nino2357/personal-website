@@ -1,0 +1,26 @@
+.navigation-bar {
+    padding-left: 100px;
+    padding-top: 20px;
+    background-color: black;
+    width: 350;
+    height: 40px;
+    
+    .button-nav {
+        padding: 10px;
+        margin: 20px 10px 20px 10px;
+        height: 30px;
+        color: white;
+        background-color: transparent;
+        border-radius: 5px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .button-nav:hover {
+        background-color: grey;
+    }
+
+    .active-link {
+        background-color: grey;
+    }
+}
