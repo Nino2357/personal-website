@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  screenHeight: number = 1200;
+  screenWidth: number = 700;
 
-  constructor() { }
+  constructor() {
+    this.getScreenSize();
+   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: undefined) {
+   this.screenHeight = window.innerHeight;
+   this.screenWidth = window.innerWidth;
+   console.log(this.screenHeight, this.screenWidth);
+}
 
 }

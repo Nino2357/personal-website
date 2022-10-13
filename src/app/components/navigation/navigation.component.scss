@@ -1,7 +1,7 @@
-.navigation-bar {
-    padding-left: 100px;
-    padding-top: 20px;
-    background-color: black;
+.navigation-bar-large-screen {
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: #040404;
     width: 350;
     height: 40px;
     
@@ -14,7 +14,7 @@
         border-radius: 5px;
         font-size: 15px;
         text-decoration: none;
-    }
+    }px
 
     .button-nav:hover {
         background-color: grey;
@@ -23,4 +23,38 @@
     .active-link {
         background-color: grey;
     }
+}
+
+.navigation-bar-small-screen {
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: #040404;
+    width: 350;
+    height: 40px;
+    
+    .menu-icon {
+        color: white;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+    }
+
+
+
+}
+
+::ng-deep .menu {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #040404;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+
+}
+
+::ng-deep .menu-button{
+    color: white;
+    background-color: #040404;
+    
 }

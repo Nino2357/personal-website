@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +13,7 @@ import { DescriptionComponent } from './components/description/description.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { SkillsComponent } from './components/skills/skills.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { SkillsComponent } from './components/skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
