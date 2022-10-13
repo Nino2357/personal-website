@@ -1,4 +1,17 @@
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 50px;
-    background-color: yellow;
+    background-color: #040404;
+    padding-left: 30px;
+    padding-top: 20px;
+
+    .button-home {
+        height: 30px;
+        color: yellow;
+        font-size: 15px;
+        text-decoration: none;
+        min-width: 110px;
+    }
 }
