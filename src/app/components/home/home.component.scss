@@ -1,0 +1,80 @@
+.content {
+    padding-left: 30px;
+    
+    .body {
+        display: flex;
+        flex-direction: row;
+
+        .photo {
+            margin: 30px;
+            max-width: 350px;
+            height: auto;
+            clip-path:ellipse(50% 50%);
+        }
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            .name {
+                color: var(--title-color);
+            }
+        
+            .profile {
+                color: var(--text1-color);
+            }
+        
+            .job {
+                color: var(--text2-color);
+            }
+
+            .btn-download {
+                padding: 10px 0 10px 0;
+                margin-top: 30px;
+                max-width: 400px;
+                min-height: 50px;
+                background-color: var(--text2-color);
+                border-radius: 10px;
+                cursor: pointer;
+
+                .btn-content {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btn-text {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 20px;
+                        justify-content: left;
+                    }
+
+                    .btn-icon {
+                        transform: scale(2);
+                        padding-right: 20px;
+                        vertical-align: middle
+                    }
+                }
+            }
+
+            .btn-download:hover {
+                background-color: #E0E0E0;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        padding-left: 0;
+        
+        .body {
+            flex-direction: column;
+
+            .titles {
+                margin-top: 0;
+            }
+        }
+    }
+  }

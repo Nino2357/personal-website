@@ -1,7 +1,8 @@
 .navigation-bar-large-screen {
     margin-right: 30px;
     margin-left: 30px;
-    background-color: #040404;
+    background-color: var(--main-bg-color);
+    padding-top: 5px;
     width: 350;
     height: 40px;
     
@@ -9,7 +10,7 @@
         padding: 10px;
         margin: 20px 10px 20px 10px;
         height: 30px;
-        color: white;
+        color: var(--text2-color);
         background-color: transparent;
         border-radius: 5px;
         font-size: 15px;
@@ -17,44 +18,42 @@
     }px
 
     .button-nav:hover {
-        background-color: grey;
+        background-color: #E0E0E0;
     }
 
     .active-link {
-        background-color: grey;
+        background-color: #E0E0E0;
     }
 }
 
 .navigation-bar-small-screen {
+    position: absolute;
+    right: 0;
     margin-right: 30px;
     margin-left: 30px;
-    background-color: #040404;
+    background-color:  var(--main-bg-color);
     width: 350;
     height: 40px;
     
     .menu-icon {
-        color: white;
+        padding-top: 2px;
+        color: var(--text2-color);
+        border: none;
         background-color: transparent;
-        position: absolute;
-        right: 0;
+        padding-right: 10px;
     }
-
-
-
 }
 
 ::ng-deep .menu {
     margin-top: 0;
     padding-top: 0;
-    background-color: #040404;
-    margin-right: 0;
-    position: absolute;
-    right: 0;
+    background-color: var(--main-bg-color);
+    
 
 }
 
 ::ng-deep .menu-button{
-    color: white;
-    background-color: #040404;
+    color: var(--text2-color);
+    background-color: var(--main-bg-color);
     
 }
