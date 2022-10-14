@@ -1,1 +1,39 @@
-<p>contact works!</p>
+<div class="content">
+    <div class="body">
+        <form name="form" class="form">
+            <input class="form-control" type="text" name="name" #name placeholder="Name" [(ngModel)]="model.name" required/>
+            <input class="form-control" type="text" name="subject" #subject placeholder="Subject" required/>
+            <input class="form-control" type="text" name="email" #email placeholder="E-mail"
+                [(ngModel)]="model.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required/>
+            <textarea class="form-control textarea" name="message" #message placeholder="Your Message"
+                [(ngModel)]="model.message" required></textarea>
+            <button class="btn-send" type="submit"
+                (click)="onSubmit(name.value, subject.value, email.value, message.value)">
+                <div class="btn-content">
+                    <h2 class="btn-text">Send email</h2>
+                    <mat-icon class="btn-icon">send</mat-icon>
+                </div>
+            </button>
+        </form>
+        <div class="infos">
+            <div class="infos-list">
+            <div class="info-block">
+                <mat-icon class="icon">email</mat-icon>
+                <h1 class="value">nino.delien@gmail.com</h1>
+                
+            </div>
+            <div class="info-block">
+                <mat-icon class="icon">phone</mat-icon>
+                <h1 class="value">+33 7 81 05 97 55</h1>
+                
+            </div>
+            <div class="info-block">
+                <img src="/assets/images/logo-linkedin.png" class="logo" alt="Logo Linkedin">
+                <a class="link" href="https://www.linkedin.com/in/nino-delien/">linkedin.com/in/nino-delien/</a>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+ 
+</div>
