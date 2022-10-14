@@ -3,13 +3,14 @@
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
-    background-color: #040404;
+    background-color: var(--main-bg-color);
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 15px;
 
     .button-home {
+        padding-top: 5px;
         height: 30px;
-        color: yellow;
+        color: var(--title-color);
         font-size: 15px;
         text-decoration: none;
         min-width: 110px;

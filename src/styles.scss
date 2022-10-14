@@ -1,6 +1,18 @@
-body {
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+:root {
+    --main-bg-color: #0A192F;
+    --title-color: #64FFDA;
+    --text-color: #828DAA;
+    --text1-color: #CCD6F6;
+    --text2-color: #8892B0;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+body
+{
     margin: 0;
     padding: 0;
-    background-color: grey;
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    font-family: var(--font-sans);
 }
