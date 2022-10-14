@@ -20,7 +20,6 @@ export class NavigationComponent implements OnInit {
   getScreenSize(event?: undefined) {
    this.screenHeight = window.innerHeight;
    this.screenWidth = window.innerWidth;
-   console.log(this.screenHeight, this.screenWidth);
 }
 
 }
