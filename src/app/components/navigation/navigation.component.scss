@@ -1,7 +1,7 @@
 .navigation-bar-large-screen {
     margin-right: 30px;
     margin-left: 30px;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
     padding-top: 5px;
     width: 350;
     height: 40px;
@@ -31,7 +31,7 @@
     right: 0;
     margin-right: 30px;
     margin-left: 30px;
-    background-color:  var(--main-bg-color);
+    background-color:  transparent;
     width: 350;
     height: 40px;
     
@@ -47,13 +47,13 @@
 ::ng-deep .menu {
     margin-top: 0;
     padding-top: 0;
-    background-color: var(--main-bg-color);
+    background-color: #122035;
     
 
 }
 
 ::ng-deep .menu-button{
     color: var(--text2-color);
-    background-color: var(--main-bg-color);
+    background-color: #122035;
     
 }

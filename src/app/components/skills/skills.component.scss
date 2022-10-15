@@ -1,0 +1,82 @@
+.content {
+    .body {
+        display: flex;
+        flex-direction: row;
+        .section {
+            width: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                color: var(--title-color);
+                height: 90px;
+            }
+
+            .element {
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                height: 150px;
+
+                .element-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .logo {
+                        height: auto;
+                        margin: 10px;
+                    }
+
+                    #angular {
+                        width: 50px;
+                    }
+
+                    #spring-boot {
+                        width: 100px;
+                        background-color: white;
+                        border-radius: 15px;
+                    }
+
+                    #java {
+                        width: 50px;
+                        background-color: white;
+                        border-radius: 15px;
+                    }
+
+                    #git {
+                        width: 50px;
+                    }
+
+                    .name {
+                        margin-right: 10px;
+                    }
+
+                    
+                }
+                background-color: var(--text2-color);
+            }
+
+            .element:hover {
+                background-color: #E0E0E0;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        .body {
+            flex-direction: column;
+            .section {
+                width: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+                .title {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
