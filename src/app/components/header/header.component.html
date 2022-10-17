@@ -1,5 +1,8 @@
 <div class="header">
-    <a class="button-home" routerLink=''>ND</a>
+    <div class="header-right">
+        <a class="button-home" routerLink=''>ND</a>
+        <img src="/assets/images/logo-languages/en-icon.png" class="language-btn" (click)="setLanguage('en')"alt="Icon England">
+        <img src="/assets/images/logo-languages/fr-icon.png" class="language-btn" (click)="setLanguage('fr')"alt="Icon France">
+    </div>
     <app-navigation></app-navigation>
 </div>
-

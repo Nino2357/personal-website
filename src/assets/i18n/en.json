@@ -1,0 +1,26 @@
+{
+    "navigation": {
+        "home": "HOME",
+        "details": "DETAILS",
+        "timeline": "TIMELINE",
+        "skills": "SKILLS",
+        "contact": "CONTACT"
+    },
+    "home": {
+        "profile": "Engineer specialized in computer science and microelectronics" ,
+        "Job": "Developer FullStack",
+        "downloadResume": "Dowload resume" 
+    },
+    "skills": {
+        "webDevelopment": "Web development",
+        "programmingLanguages" : "Programming Languages",
+        "developmentTools": "Development tools"
+    },
+    "contact": {
+        "name": "Name",
+        "subject": "Subject",
+        "email": "E-mail",
+        "message": "Your Message",
+        "send": "Send email"
+    }
+}
