@@ -50,7 +50,8 @@ import { SkillsComponent } from './components/skills/skills.component';
   })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [TranslateModule]
 })
 export class AppModule { }
 
