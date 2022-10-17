@@ -1,0 +1,26 @@
+{
+    "navigation": {
+        "home": "ACCEUIL",
+        "details": "A PROPOS",
+        "timeline": "PARCOURS",
+        "skills": "COMPETENCES",
+        "contact": "CONTACT"
+    },
+    "home" : {
+        "profile" : "Ingénieur spécialisé en informatique et microélectronique" ,
+        "job" : "Développeur FullStack",
+        "downloadResume" : "Télécharger le CV" 
+    },
+    "skills" : {
+        "webDevelopment" : "Développement web",
+        "programmingLanguages" : "Langages de programmation",
+        "developmentTools" : "Outils de développement"
+    },
+    "contact" : {
+        "name" : "Nom",
+        "subject" : "Sujet",
+        "email" : "E-mail",
+        "message" : "Votre message",
+        "send" : "Envoyer un e-mail"
+    }
+}

@@ -1,16 +1,16 @@
 <div class="content">
     <div class="body">
         <form name="form" class="form">
-            <input class="form-control" type="text" name="name" #name placeholder="Name" [(ngModel)]="model.name" required/>
-            <input class="form-control" type="text" name="subject" #subject placeholder="Subject" required/>
-            <input class="form-control" type="text" name="email" #email placeholder="E-mail"
+            <input class="form-control" type="text" name="name" #name placeholder="{{ 'contact.name' | translate }}" [(ngModel)]="model.name" required/>
+            <input class="form-control" type="text" name="subject" #subject placeholder="{{ 'contact.subject' | translate }}" required/>
+            <input class="form-control" type="text" name="email" #email placeholder="{{ 'contact.email' | translate }}"
                 [(ngModel)]="model.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required/>
-            <textarea class="form-control textarea" name="message" #message placeholder="Your Message"
+            <textarea class="form-control textarea" name="message" #message placeholder="{{ 'contact.message' | translate }}"
                 [(ngModel)]="model.message" required></textarea>
             <button class="btn-send" type="submit"
                 (click)="onSubmit(name.value, subject.value, email.value, message.value)">
                 <div class="btn-content">
-                    <h2 class="btn-text">Send email</h2>
+                    <h2 class="btn-text">{{ 'contact.send' | translate }}</h2>
                     <mat-icon class="btn-icon">send</mat-icon>
                 </div>
             </button>
