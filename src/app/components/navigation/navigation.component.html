@@ -1,8 +1,5 @@
 <div class="navigation-bar-large-screen" *ngIf="screenWidth>750"> 
     <a class="button-nav" routerLink='home' routerLinkActive="active-link">{{ "navigation.home" | translate }}</a>
-    <a class="button-nav" routerLink='description' routerLinkActive="active-link">{{ "navigation.details" | translate }}</a>
-    <a class="button-nav" routerLink='timeline' routerLinkActive="active-link">{{ "navigation.timeline" | translate }}</a>
-    <a class="button-nav" routerLink='skills' routerLinkActive="active-link">{{ "navigation.skills" | translate }}</a>
     <a class="button-nav" routerLink='contact' routerLinkActive="active-link">{{ "navigation.contact" | translate }}</a>
 </div>
 <div class="navigation-bar-small-screen" *ngIf="screenWidth<=750">
@@ -11,9 +8,6 @@
     </button>
     <mat-menu #menu="matMenu" class="menu">
         <button mat-menu-item class="menu-button" routerLink='home'>{{ "navigation.home" | translate }}</button>
-        <button mat-menu-item class="menu-button" routerLink='description'>{{ "navigation.details" | translate }}</button>
-        <button mat-menu-item class="menu-button" routerLink='timeline'>{{ "navigation.timeline" | translate }}</button>
-        <button mat-menu-item class="menu-button" routerLink='skills'>{{ "navigation.skills" | translate }}</button>
         <button mat-menu-item class="menu-button" routerLink='contact'>{{ "navigation.contact" | translate }}</button>
     </mat-menu>
 
