@@ -8,7 +8,7 @@
     },
     "home": {
         "profile": "Engineer specialized in computer science and microelectronics" ,
-        "Job": "Developer FullStack",
+        "job": "Developer FullStack",
         "downloadResume": "Dowload resume" 
     },
     "skills": {
